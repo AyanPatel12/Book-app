@@ -1,0 +1,27 @@
+
+
+   .navbar-logo {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navbar-search {
+    margin-left: 1rem;
+  }
+  
+  .navbar-search-input {
+    background-color: white;
+    border-radius: 40px; /* Adjust the radius for desired roundness */
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  

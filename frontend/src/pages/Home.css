@@ -1,0 +1,58 @@
+
+   .home-background {
+    background-image: url('https://i3.wp.com/wallpapers.com/images/hd/library-filled-with-books-vyy56lqa9wji657j.jpg'); /* Set the path to your background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-background {
+    background: rgba(255, 255, 255, 0.3); /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .main-image-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .content-box {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3); /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .home-content-inner {
+    text-align: left;
+  }
+  
+  .feature-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .feature-icon {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .feature-icon i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  

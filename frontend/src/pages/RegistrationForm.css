@@ -1,0 +1,38 @@
+  
+  .registration-background {
+    background-image: url('https://img.freepik.com/free-photo/wooden-table-with-blurred-background_1134-14.jpg?w=1060&t=st=1721283581~exp=1721284181~hmac=d20cbce0ba18cf26a359c8b813a5ab2a88ae249c9e2d2e22a053d10920f23e8c'); /* Set the path to your background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container-background {
+    background: rgba(255, 255, 255, 0.4); /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3); /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+  }
+  
+  .custom-textfield {
+    background-color: #f7f7f7; /* Light grey background */
+    border-radius: 20px; /* Rounded corners */
+  }
+  
+  .custom-button {
+    background-color: #333; /* Dark grey button background */
+    &:hover {
+      background-color: #555; /* Slightly lighter grey on hover */
+    }
+  }
+  

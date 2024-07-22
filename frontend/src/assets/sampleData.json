@@ -1,0 +1,38 @@
+[
+    {
+      "_id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "publishYear": 1960,
+      "genre": "Fiction"
+    },
+    {
+      "_id": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "publishYear": 1949,
+      "genre": "Dystopian"
+    },
+    {
+      "_id": "3",
+      "title": "Moby-Dick",
+      "author": "Herman Melville",
+      "publishYear": 1851,
+      "genre": "Adventure"
+    },
+    {
+      "_id": "4",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "publishYear": 1813,
+      "genre": "Romance"
+    },
+    {
+      "_id": "5",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "publishYear": 1925,
+      "genre": "Classic"
+    }
+  ]
+  
