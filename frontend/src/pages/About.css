@@ -1,0 +1,28 @@
+.about-background {
+  background-image: url('https://i3.wp.com/wallpapers.com/images/hd/library-filled-with-books-vyy56lqa9wji657j.jpg'); /* Set the path to your background image */
+  padding: 0 0; /* Padding for spacing */
+  height: 100vh;
+  }
+  
+  .about-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 1rem;
+    background: rgba(255, 255, 255, 0.5); /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .about-content {
+    padding: 20px;
+  }
+  
+  .about-container h4 {
+    margin-bottom: 16px;
+  }
+  
+  .about-container p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+  

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, IconButton, Box, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Box, MenuItem, Select, FormControl, InputLabel } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { deepOrange } from '@mui/material/colors';
@@ -16,7 +15,7 @@ const theme = createTheme({
   },
 });
 
-const Navbar = ({ genres = [], selectedGenre, setSelectedGenre }) => {
+const Navbar = ({ isAuthenticated, onLogout, genres = [], selectedGenre, setSelectedGenre }) => {
   return (
     <ThemeProvider theme={theme}>
       <AppBar position="static" color="secondary">
@@ -29,8 +28,12 @@ const Navbar = ({ genres = [], selectedGenre, setSelectedGenre }) => {
           <Box className="navbar-links">
             <Button color="inherit" component={Link} to="/">Home</Button>
             <Button color="inherit" component={Link} to="/about">About</Button>
-            <Button color="inherit" component={Link} to="/login">Login</Button>
             <Button color="inherit" component={Link} to="/contact">Contact</Button>
+            {isAuthenticated ? (
+              <Button color="inherit" onClick={onLogout}>Logout</Button>
+            ) : (
+              <Button color="inherit" component={Link} to="/login">Login</Button>
+            )}
           </Box>
           <FormControl variant="outlined" size="small" sx={{ m: 1, minWidth: 120 }}>
             <InputLabel>Genre</InputLabel>
@@ -45,7 +48,6 @@ const Navbar = ({ genres = [], selectedGenre, setSelectedGenre }) => {
               ))}
             </Select>
           </FormControl>
-         
         </Toolbar>
       </AppBar>
     </ThemeProvider>
@@ -53,6 +55,8 @@ const Navbar = ({ genres = [], selectedGenre, setSelectedGenre }) => {
 };
 
 Navbar.propTypes = {
+  isAuthenticated: PropTypes.bool.isRequired,
+  onLogout: PropTypes.func.isRequired,
   genres: PropTypes.array,
   selectedGenre: PropTypes.string.isRequired,
   setSelectedGenre: PropTypes.func.isRequired,

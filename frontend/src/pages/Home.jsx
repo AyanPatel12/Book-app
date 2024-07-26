@@ -9,7 +9,7 @@ import { MdOutlineAddBox } from 'react-icons/md';
 import BooksCard from '../components/home/BooksCard';
 import BooksTable from '../components/home/BooksTable';
 
-const UserHome = ({}) => {
+const UserHome = ({ isAuthenticated, onLogout }) => {
     const [books, setBooks] = useState([]);
     const [genres, setGenres] = useState([]);
     const [selectedGenre, setSelectedGenre] = useState('');
@@ -48,7 +48,8 @@ const UserHome = ({}) => {
 
     return (
         <>
-            <Navbar genres={genres} selectedGenre={selectedGenre} setSelectedGenre={setSelectedGenre}/>
+            <Navbar genres={genres} selectedGenre={selectedGenre} setSelectedGenre={setSelectedGenre}   isAuthenticated={isAuthenticated}
+                onLogout={onLogout}/>
             <Container maxWidth="lg" sx={{ mt: 2, backgroundColor: '#f0f0f0', padding: '20px', borderRadius: '8px', height: '85vh' }}>
                 <Box sx={{ mb: 4, display: 'flex', justifyContent: 'center' }}>
                     <Button
